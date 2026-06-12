@@ -125,16 +125,4 @@ Cucumber generates native HTML reports directly after running:
 
 ---
 
-## 🛠️ Solutions to Complex Automation Challenges
-
-During framework development, several UI edge cases on the DemoQA website were successfully resolved:
-
-*   **Accordion Fade Wrapper**: The locator was targeting the inner paragraph, which never receives the `.show` class in Bootstrap. Corrected by redirecting target to parent `#collapseOne` and `#collapseTwo` wrappers.
-*   **Menu Hover Execution**: Standard hover logic was failing due to overlay elements. Resolved by hovering the correct parent item and adding a headless-compatible fallback hover action.
-*   **Transition Fades (Tabs)**: Standard `toBeHidden()` assertions fail because fade transitions delay component state shifts. Resolved by validating the absence of the `.active` class instead.
-*   **React Web Tables**: DemoQA implements a custom React-based div grid (`.ReactTable`) rather than native `<table>` elements. Locators were custom-written to navigate virtualized DOM grids.
-*   **HTML5 Drag & Drop**: Raw mouse coordinates coordinate movements sometimes fail to trigger HTML5 drop handlers. Switched to Playwright's native `dragTo()` API.
-*   **Draggable & Viewport Shifts**: Scrolling actions shifted coordinates while drag box positions were being read. Solved by writing a dynamic `dragByOffset()` helper that calculates mouse positions dynamically relative to the viewport.
-*   **Sortable Lists (jQuery UI)**: Sortable components require simulated mouse sequences with slight delays to register drag items. Solved with a delayed custom drag-and-drop helper.
-*   **Broken Image Load Checks**: Standard checks run before images completely download. Wrapped the `naturalWidth` validation in an asynchronous `expect.poll` loop.
-*   **Dynamic Selector Properties**: The locator looked for `/^Hello/`, but the button text changes dynamically. Corrected locator to look directly for `"Visible After 5 Seconds"`.
+.
