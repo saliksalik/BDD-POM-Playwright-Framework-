@@ -29,17 +29,17 @@ The framework supports two parallel execution strategies:
 
 ```text
 automation-framework/
-├── features/               # 📝 Gherkin feature files (.feature)
-├── step-definitions/       # 🔗 Glue code matching Gherkin text to Javascript
-├── pages/                  # 🖥️ Page Object Model classes (elements & actions)
-├── fixtures/               # 🛠️ Playwright context setup and POM fixtures
-├── hooks/                  # 🪝 Cucumber setup & teardown (hooks, ad-blocking)
-├── tests/                  # 🧪 Direct Playwright Spec files (.spec.js)
-├── test-data/              # 📊 Dynamic factories generating mock datasets
-├── config/                 # ⚙️ Environment settings & configuration files
-├── reports/                # 📊 Cucumber HTML test reports
-├── allure-results/         # 📊 Raw Allure results
-└── playwright.config.js    # 🛠️ Playwright runner configuration
+├── features/               #  Gherkin feature files (.feature)
+├── step-definitions/       #  Glue code matching Gherkin text to Javascript
+├── pages/                  #  Page Object Model classes (elements & actions)
+├── fixtures/               #  Playwright context setup and POM fixtures
+├── hooks/                  #  Cucumber setup & teardown (hooks, ad-blocking)
+├── tests/                  #  Direct Playwright Spec files (.spec.js)
+├── test-data/              #  Dynamic factories generating mock datasets
+├── config/                 #  Environment settings & configuration files
+├── reports/                #  Cucumber HTML test reports
+├── allure-results/         #  Raw Allure results
+└── playwright.config.js    #  Playwright runner configuration
 ```
 
 ### 🧩 Shared POM Layer
