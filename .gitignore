@@ -1,0 +1,13 @@
+node_modules/
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.local-browsers
+/allure-results/
+/allure-report/
+/reports/cucumber-report.html
+/reports/*.html
+.env
+.DS_Store
+Thumbs.db
+.agents/

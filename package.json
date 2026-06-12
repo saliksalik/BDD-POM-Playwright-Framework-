@@ -1,0 +1,21 @@
+{
+  "name": "automation-exercise-pom-framework",
+  "version": "1.0.0",
+  "description": "Advanced Playwright POM Framework for automationexercise.com",
+  "scripts": {
+    "test": "cucumber-js \"features/**/*.feature\" --require \"step-definitions/**/*.steps.js\" --require \"hooks/**/*.js\" -f allure-cucumberjs/reporter -f html:reports/cucumber-report.html",
+    "allure:generate": "allure generate allure-results --clean",
+    "allure:serve": "allure serve allure-results",
+    "allure:open": "allure open allure-report"
+  },
+  "devDependencies": {
+    "@cucumber/cucumber": "^10.8.0",
+    "@faker-js/faker": "^8.4.1",
+    "@playwright/test": "^1.44.0",
+    "@types/node": "^25.9.2",
+    "allure-commandline": "^2.42.1",
+    "allure-cucumberjs": "^3.9.0",
+    "allure-playwright": "^3.9.0",
+    "typescript": "^6.0.3"
+  }
+}
